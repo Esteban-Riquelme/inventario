@@ -1,0 +1,39 @@
+/* Estilo para el navbar y enlaces */
+.navbar {
+    background-color: #F8B400;
+}
+
+.navbar a {
+    color: #0D1B2A;
+}
+
+.navbar a:hover {
+    color: #0D1B2A;
+}
+
+/* Estilo para el header */
+header {
+    background-color: #006994;
+    color: #fff;
+}
+
+/* Estilo para la sección de dispositivos */
+.devices {
+    background-color: #F8B400;
+}
+
+.devices h2 {
+    color: #0D1B2A;
+}
+
+.devices .card-body {
+    background-color: #fff;
+}
+
+.devices .card-body h5 {
+    color: #333;
+}
+
+.devices .card-body p {
+    color: #666;
+}

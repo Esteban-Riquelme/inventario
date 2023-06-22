@@ -1,0 +1,79 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de dispositivos electrónicos</title>
+	<link rel="stylesheet" href="{%static 'css/inico.css'%}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inventario</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Selecciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Selección 1</a></li>
+                            <li><a class="dropdown-item" href="#">Selección 2</a></li>
+                            <li><a class="dropdown-item" href="#">Selección 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-light text-center py-5">
+        <h1 class="display-4">Inventario de dispositivos electrónicos</h1>
+    </header>
+    <main class="container my-5">
+        <section class="devices">
+            <h2 class="text-center mb-5">Dispositivos disponibles</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="{%static 'imagenes/imagen1.jpeg'%}" class="card-img-top" alt="Dispositivo 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Dispositivo 1</h5>
+                            <p class="card-text">Descripción del dispositivo 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="{%static 'imagenes/imagen2.jpeg'%}" class="card-img-top" alt="Dispositivo 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Dispositivo 2</h5>
+                            <p class="card-text">Descripción del dispositivo 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="{%static 'imagenes/imagen3.jpg'%}" class="card-img-top" alt="Dispositivo 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Dispositivo 3</h5>
+                            <p class="card-text">Descripción del dispositivo 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
